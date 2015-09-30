@@ -79,14 +79,31 @@ p {
 /**
  * Register Button
  */
-.reg {
-    ;
+.reg{
+    
     width: 100%;
     height: 100%;
     border: 0px;
     background-color: $brand-color;
-    color: white;
+    color: $text-color-light;
     text-transform: uppercase;
+    display: block;
+    line-height: 80px;
+    text-align: center;
+}
+a.reg {
+    color: $text-color-light;
+    text-decoration: none;
+
+    &:visited {
+        color: $text-color-light;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $text-color-light;
+        text-decoration: none;
+    }
 }
 .reg::after {
     padding-left: 1em;
