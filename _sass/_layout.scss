@@ -1,0 +1,251 @@
+/**
+ * Layout Abstractions
+ */
+.panel > div {
+    margin: 0 auto;
+    width: 1125px;
+    
+}
+
+/**
+ * Hero
+ */
+
+.hero {
+    
+}
+
+.hero > div {
+    height: 700px;
+    position: relative; /* For the .intro section */       
+    background-repeat: no-repeat;
+
+
+    background-position-x: 179px;
+    background-position-y: 86px;
+    background-position: 179px 86px;
+
+    background-size: 996px;
+
+    background-image: url('../images/bigstock-Finishing-Line-4290978-bw.jpg'); 
+    background-image: -webkit-gradient(linear, right , left , from(rgba(255,255,255,0)), to(#fff)), url('../images/bigstock-Finishing-Line-4290978-bw.jpg'), ;
+    background-image: -webkit-linear-gradient(right, rgba(255,255,255,0), #fff 80%), url('../images/bigstock-Finishing-Line-4290978-bw.jpg');
+    background-image:  -moz-linear-gradient(right, rgba(255,255,255,0), #fff 80%), url('../images/bigstock-Finishing-Line-4290978-bw.jpg');
+    background-image: -o-linear-gradient(right, rgba(255,255,255,0), #fff 80%), url('../images/bigstock-Finishing-Line-4290978-bw.jpg'); 
+    background-image: linear-gradient(to left, rgba(255,255,255,0), #fff 80%), url('../images/bigstock-Finishing-Line-4290978-bw.jpg');
+    
+}
+
+/**
+ * Nav
+ */
+
+.hero nav {
+    width: 500px;
+}
+
+.hero nav > a + a {
+    padding-left: 20px;
+}
+
+/**
+ * Callout
+ */
+
+.hero .callout {
+    position: absolute;
+    right: 0;
+    width: 250px;   
+}
+
+.hero .callout section {
+    position: relative;
+    height: 80px;
+}
+.hero .callout section:nth-child(1) {
+    
+}
+.hero .callout section:nth-child(2) {
+    
+}
+
+/**
+ * Main
+ */
+
+.hero main {
+    
+    position: absolute;
+    top: 130px;
+    width: 500px;
+}
+
+/**
+ * Arrow
+ */
+.hero .arrow {
+
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -40px;
+    background-color: #fff;
+
+    width: 75px;
+    height: 75px;
+
+    text-align:center;
+    color: $text-color;
+    font-size: 2em;
+    line-height: 75px;
+
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px -5px #000;
+}
+
+/**
+ * Primary Content
+ */
+
+.primary-content {
+    sbackground-color: $brand-color;
+}
+
+.primary-content > div {
+    /*position: relative;*/
+    
+    height: 210px;
+}
+
+/**
+ * Breakouts
+ */
+
+.breakouts {
+    sposition: relative;
+    stext-align: center;
+    display: -webkit-box; 
+    display: flex;
+ }
+
+.breakouts .breakout {
+    -webkit-box-flex: 1;
+    width: 33%;
+    flex: 1;
+    -webkit-transform: translate(0px,-40px);
+    transform: translateY(-40px);
+    height: 290px;
+    
+ }
+
+ .breakouts .breakout:nth-child(2){
+    swidth: 33.3%;
+    margin: 0px 20px;
+ }
+
+
+
+
+/**
+ * Sponsor Content
+ */
+
+.sponsor-content {
+    background-color: $brand-color;
+    color: $text-color-light;
+}
+
+.sponsor-content > div {
+    /*position: relative;*/
+    
+    padding-top: 60px;
+}
+
+/**
+ * Sponsor Tiles
+ */
+
+ .sponsor-tiles {
+    text-align: center;
+ }
+
+/**
+ * Map
+ */
+
+.map {
+    
+    background-color: #f3f3f3;
+}
+
+.map > div {
+    /*position: relative;*/
+    background-image: url("../images/map2.png");
+    background-size: cover;
+    height: 500px;
+    background-position: 0px 70%;
+    sbackground-size: 100% auto;
+    background-repeat: no-repeat;
+    min-width: 1125px;
+   
+    /*-webkit-animation: mymove 5s infinite; 
+    animation: mymove 60s infinite;*/
+    
+
+
+}
+@-webkit-keyframes mymove {
+    0%   {
+        background-size: 100%;
+        transform: rotate(0deg);
+    }
+    50%  {
+        background-size: 105%;
+        transform: rotate(1deg);
+    }
+    100% {
+        background-size: 100%;
+        transform: rotate(0deg);
+    }
+} 
+
+/* Standard syntax */ 
+@keyframes mymove {
+    0%   {
+        background-size: 100%;
+        transform: rotate(0deg);
+    }
+    50%  {
+        background-size: 105%;
+        transform: rotate(1deg);
+    }
+    100% {
+        background-size: 100%;
+        transform: rotate(0deg);
+    }
+}
+
+
+/**
+ * Footer
+ */
+
+.footer-content {
+    sbackground-color: #33ff33;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.footer-content > div {
+    /*position: relative;*/
+    padding-top: 60px;
+    sbackground-color: rgba(0,0,0,.25);
+    overflow:hidden;
+}
+
+.footer-content  .social {
+    padding-top: 100px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 0px 30px
+}
