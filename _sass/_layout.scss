@@ -107,7 +107,7 @@
  */
 
 .primary-content {
-    sbackground-color: $brand-color;
+    background-color: $brand-color;
 }
 
 .primary-content > div {
@@ -230,10 +230,26 @@
  */
 
 .footer-content {
-    sbackground-color: #33ff33;
+    background-color: $brand-color;
+    color: $text-color-light;
     text-align: center;
     padding-bottom: 50px;
 
+}
+
+.footer-content a {
+    color: $text-color-light;
+    text-decoration: underline;
+
+    &:visited {
+        color: $text-color-light;
+        text-decoration: underline;
+    }
+
+    &:hover {
+        color: $text-color-light;
+        text-decoration: underline;
+    }
 }
 
 .footer-content > div {
